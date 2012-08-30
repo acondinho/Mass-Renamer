@@ -1,21 +1,17 @@
 *****************************************
-*		Mass File Renamer				*
-*	     Andrew Condinho				*
-*	      Version a0.1					*
+*	     Mass File Renamer		*
+*	     Andrew Condinho		*
+*	      Version a0.1		*
 *****************************************
 
 Take a directory full of like-named files. 
-Use a regexp if applicable to seperate what to keep and then append a prefix or a suffix
-(IE a music folder with unappealing names (01 - Song Title))
+Splits a filename and then appends a prefix (IE a music folder with unappealing names (01 - Song Title))
 
-Rough flowchart
-1) Open file directory and recovery folder path
-2) Retrieve number of files
-3) Ask for regexp
-4) Ask for prefix/suffix
-5) Start Loop
-  a) Load filename
-  b) Use regexp to grab part to keep
-  c) Append prefix/suffix
-  d) Save File
-6) End Loop
+Changes:
+8/29/2012 v0.1 Working
+Program grabs a directory, asks you what you would like to split the filename on, what you want to append to the front of it and then makes the changes and saves.
+
+Still Need to Complete:
+- Validation for splitting and prefix inputs
+- Validation for no valid files/empty directory
+- Error checking for files with multiple splits (ex: 01 - Song Title   - Other info)
